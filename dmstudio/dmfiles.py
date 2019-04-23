@@ -89,7 +89,7 @@ class init(object):
         for i, field in enumerate(fields):
             field_string += " *" + prefix + str(i + 1) + "=" + field + " "
 
-        return field_string;
+        return field_string
 
     def comres(self,
                reserve_o='required',
@@ -146,7 +146,7 @@ class init(object):
 
         command += " &reserve=" + reserve_o
 
-        if zone != "optional":
+        if zone_f != "optional":
             command += " *zone=" + zone_f
 
         if arguments != "optional":
@@ -630,7 +630,7 @@ class init(object):
 
         command += " &out=" + out_o
 
-        if file != "optional":
+        if file_f != "optional":
             command += " *file=" + file_f
 
         if append_p != "optional":
@@ -830,10 +830,10 @@ class init(object):
 
         command = "scrfmt "
 
-        if out != "optional":
+        if out_o != "optional":
             command += " &out=" + out_o
 
-        if text != "optional":
+        if text_f != "optional":
             command += " *text=" + text_f
 
         if arguments != "optional":
@@ -1003,7 +1003,8 @@ class init(object):
     def sustpe(self,
                out_o='required',
                direct_p=1,
-               arguments='optional'):
+               arguments='optional',
+               retrieval='optional'):
 
         """
         SUSTPE

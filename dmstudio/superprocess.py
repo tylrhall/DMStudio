@@ -25,7 +25,7 @@ def dxf_to_dm(dxf_i, out_o, zone_f=None, zone_p=None):
 
     if zone_f==None:
 
-        obj3d.SaveAsDatamineFile(outfile, oScript.ActiveProject.ExtendedPrecision, True, "")
+        obj3d.SaveAsDatamineFile(out_o, oScript.ActiveProject.ExtendedPrecision, True, "")
 
     else:
 

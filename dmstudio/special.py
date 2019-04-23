@@ -98,7 +98,7 @@ def csv_to_definition(csv):
 
     df = pd.read_csv(csv)
 
-    return pd_to_definition(df);
+    return pd_to_definition(df)
 
 def pd_to_definition(df):
 
@@ -124,7 +124,7 @@ def pd_to_definition(df):
     definition['Keep']='Y'
     definition['Default']=''
 
-    return definition;
+    return definition
     
     
 

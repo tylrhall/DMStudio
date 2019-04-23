@@ -22,7 +22,7 @@ def _scriptinit(studio_object):
     ActiveX connection
     '''
 
-    return win32com.client.Dispatch(studio_object);
+    return win32com.client.Dispatch(studio_object)
 
 def studio(version):
     '''
@@ -66,7 +66,7 @@ def studio(version):
 
     # print 'Connected to Datamine:', oScript
 
-    return oScript;
+    return oScript
 
 def _make_dmdir():
     
