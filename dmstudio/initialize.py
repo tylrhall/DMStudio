@@ -46,7 +46,7 @@ def studio(version):
     _make_dmdir()
 
     if version == 'StudioRM':
-        oScript = _scriptinit("Datamine.StudioRM.Application")
+        oScript = _scriptinit("Datamine.StudioEM.Application")
     elif version == 'Studio3':
         oScript = _scriptinit("Datamine.Studio.Application")
     elif version == 'StudioEM':
@@ -54,7 +54,7 @@ def studio(version):
     else:
         # no version given, will try to find a valid version
         try:
-            oScript = _scriptinit("Datamine.StudioRM.Application")
+            oScript = _scriptinit("Datamine.StudioEM.Application")
         except:
             try:
                 oScript = _scriptinit("Datamine.Studio.Application")

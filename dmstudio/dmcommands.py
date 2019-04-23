@@ -6,7 +6,7 @@ OSCRIPTCON = None
 
 class init(object):
 
-    def __init__(self, version=None):
+    def __init__(self, version='StudioEM'):
 
         """
         commands.__init__
