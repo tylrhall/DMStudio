@@ -80,3 +80,5 @@ Installation
 For those starting out in python, the easiest option for windows is downloading [Anaconda](https://www.anaconda.com/download/) for python 2.7. This has all the basic packages that will be required.
 
 A pip install version of dmstudio will be available shortly. For the time being a pre-release version is available on github.
+
+From Tyler: To install this package, drag and drop the folder to a location on your hard drive, make sure Anaconda is in your environment variables. Go to the command prompt, navigate to the folder that contains setup.py, and enter python setup.py install into the command line. I fixed some immediate bugs so the code can actually run, but I can't figure out how to push these changes to Sean's repository, so here we are. All credit for making this initial work, and I'll publish different scripts I run as I write them.
