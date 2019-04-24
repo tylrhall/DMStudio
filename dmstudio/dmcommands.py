@@ -1,4 +1,4 @@
-import initialize
+from dmstudio import initialize
 
 
 # constant to avoid redundant COM connections which slows down processing
@@ -9986,8 +9986,7 @@ class init(object):
         """
         EXTRA
         -----
-        This is auto-generated documentation. For more command information visit the Datamine help file.
-
+EXTRA is a general purpose EXpression TRAnslator that allows you totransform the contents of files by modifying fields and creating new onesbased on the values of existing fields.
         Input Files:
         ------------
 
@@ -10070,7 +10069,25 @@ class init(object):
         """
         FACTOR
         ------
-        This is auto-generated documentation. For more command information visit the Datamine help file.
+        Introduction
+
+        Defines a number of factors from the common inter-correlationbetween variables using the correlation (R) matrix.
+
+        R - mode factor analysis using the un-rotated, varimax and promax rotatedcorrelation matrix to classify variables into groups (factors) and calculate factor scores. This defines a number of factors from the common inter-correlationbetween variables using the correlation (R) matrix.
+
+        Note the difference from the principal components analysis which usesvariance. The number of factors selected is usually less than the numberof variables. Three types of factor loadings are calculated, a) the un-rotatedsolution, ie principal components, b) the rotated varimax solution andc) the oblique promax solution. 
+
+        Statistical factor analysis is completed by iterative calculation ofthe un-rotated factor matrix. Non- statistical factor analysis is completedby a single pass only, ie. the varimax and promax rotations are non statistical.The number of factors selected can be forced by defining a given eigenvalue or a given number of factors. Significance levels are calculatedusing the Burt-Banks equation.
+
+        How to use
+
+        Note the difference from the principal components analysis which usesvariance. The number of factors selected is usually less than the numberof variables. Three types of factor loadings are calculated, a) the un-rotatedsolution, ie principal components, b) the rotated varimax solution andc) the oblique promax solution. Statistical factor analysis is completedby iterative calculation of the un-rotated factor matrix. Non- statistical factor analysis is completed by a single pass only, ie. the varimax andpromax rotations are non statistical. The number of factors selected canbe forced by defining a given eigen value or a given number of factors.Significance levels are calculated using the Burt-Banks equation.
+
+        File Handling
+
+        The input data file (&IN) must have sample identifier field (@SAMPID)which has to be declared on input. Optional output files, for un-rotated(&SCORES), rotated (RSCORES) and oblique rotated (&OSCORES) areavailable for farther processing.
+
+        If the user wishes to plot maps of the output scores then the scoresfiles can be joined to the original input file using the JOIN processand defining SAMPID as the keyfield.
 
         Input Files:
         ------------

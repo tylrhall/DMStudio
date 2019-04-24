@@ -12,7 +12,7 @@ To do:
 * Use the same field parsing as ``dmcommands``
 
 '''
-import initialize
+from dmstudio import initialize
 
 # constant to avoid redundant COM connections which slows down processing
 
