@@ -9,8 +9,8 @@ and to facilitate more readable code.
 
 '''
 
-import dmfiles
-import dmcommands
+from dmstudio import dmfiles
+from dmstudio import dmcommands
 import pandas as pd
 
 # -----------------------------------------------------------------------------------#
@@ -84,7 +84,7 @@ def inpfil(csv=None, out_o=None, definition=None):
         if definition['Field Name'].iloc[i] in IMPLICIT_FIELDS:
             definition['Field Type'].iloc[i] = 'N'
             definition['Keep'].iloc[i] = 'N'
-            definition['Default'].iloc[i] = df[impf].iloc[0]
+            definition['Default'].iloc[i] = definition[IMPLICIT_FIELDS].iloc[0]
 
         for column in definition.columns:
             arguments += " '" + (str(definition[column].iloc[i])).strip() + "' "

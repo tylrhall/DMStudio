@@ -1,13 +1,3 @@
 '''
-dmstudio
-========
-
-Python module for Datamine Studio scripting.
-
-
+Initialization file to enable importing of dmdir.py
 '''
-
-import dmcommands
-import dmfiles
-import special
-import superprocess
