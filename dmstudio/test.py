@@ -1,7 +1,7 @@
-import dmcommands
-import special
-import dmfiles
-import dmdir as f
+from dmstudio import dmcommands
+from dmstudio import special
+from dmstudio import dmfiles
+from dmstudio import dmdir as f
 
 print f.file
 
